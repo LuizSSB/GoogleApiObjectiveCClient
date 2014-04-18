@@ -1,6 +1,6 @@
 Pod::Spec.new do |s|
   s.name         = "GoogleApiObjectiveCClient"
-  s.version      = "0.1"
+  s.version      = "0.0.1"
   s.summary      = "Git version of the original Google API Client for ObjectiveC, which uses SVN"
   s.homepage     = "https://github.com/LuizSSB/GoogleApiObjectiveCClient"
   s.license      = { :type => "MIT", :file => "license.txt" }
