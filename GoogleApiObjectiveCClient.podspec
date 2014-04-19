@@ -1,6 +1,6 @@
 Pod::Spec.new do |s|
   s.name         = "GoogleApiObjectiveCClient"
-  s.version      = "0.0.3"
+  s.version      = "0.0.4"
   s.summary      = "Git version of the original Google API Client for ObjectiveC, which uses SVN"
   s.homepage     = "https://github.com/LuizSSB/GoogleApiObjectiveCClient"
   s.license      = { :type => "MIT", :file => "license.txt" }
@@ -8,9 +8,27 @@ Pod::Spec.new do |s|
   s.platform     = :ios
   s.platform     = :ios, "5.0"
   s.source       = { :git => "https://github.com/LuizSSB/GoogleApiObjectiveCClient.git", :tag => "v#{s.version}" }
-  s.public_header_files = "*/*.h", "*/*/*.h", "*/*/*/*.h", "*.h"
-  s.source_files  = "*/*.{h,m}", "*/*/*.{h,m}", "*/*/*/*.{h,m}", "*.{h,m}"
-  s.exclude_files = "Tests/*.*", "*/Tests/*.*", "*/*/Tests/*.*",  "*/*/*/Tests/*.*", "Services/*/*/*_Sources.m", "*/Mac/*.*", "*/*/Mac/*.*",  "*/*/*/Mac/*.*"
-  s.resources     = "*/*/*.xib", "*/*/*/*.xib" 
   s.requires_arc  = false
+  
+  s.exclude_files = "Tests/*.*",
+  					"*/Tests/*.*",
+					"*/*/Tests/*.*",
+					"*/*/*/Tests/*.*",
+					"*/Mac/*.*",
+					"*/*/Mac/*.*",
+					"*/*/*/Mac/*.*",
+					"Services/*/*/*_Sources.m"
+					 
+  s.resources     = "*/*/*.xib",
+  					"*/*/*/*.xib" 
+					
+  s.public_header_files = "*/*.h",
+  						  "*/*/*.h",
+						  "*/*/*/*.h",
+						  "*.h"
+						  
+  s.source_files  = "*/*.{h,m}",
+  					"*/*/*.{h,m}",
+					"*/*/*/*.{h,m}",
+					"*.{h,m}"
 end
