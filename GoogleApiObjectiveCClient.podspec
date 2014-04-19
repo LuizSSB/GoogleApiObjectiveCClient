@@ -1,6 +1,6 @@
 Pod::Spec.new do |s|
   s.name         = "GoogleApiObjectiveCClient"
-  s.version      = "0.0.2"
+  s.version      = "0.0.3"
   s.summary      = "Git version of the original Google API Client for ObjectiveC, which uses SVN"
   s.homepage     = "https://github.com/LuizSSB/GoogleApiObjectiveCClient"
   s.license      = { :type => "MIT", :file => "license.txt" }
@@ -10,7 +10,7 @@ Pod::Spec.new do |s|
   s.source       = { :git => "https://github.com/LuizSSB/GoogleApiObjectiveCClient.git", :tag => "v#{s.version}" }
   s.public_header_files = "*/*.h", "*/*/*.h", "*/*/*/*.h", "*.h"
   s.source_files  = "*/*.{h,m}", "*/*/*.{h,m}", "*/*/*/*.{h,m}", "*.{h,m}"
-  s.exclude_files = "Tests/*.*", "*/Tests/*.*", "*/*/Tests/*.*",  "*/*/*/Tests/*.*", "Services/YouTube/Generated/GTLYouTube_Sources.m"
-  s.resources     = "OAuth2/Touch/*.xib"
+  s.exclude_files = "Tests/*.*", "*/Tests/*.*", "*/*/Tests/*.*",  "*/*/*/Tests/*.*", "Services/*/*/*_Sources.m", "*/Mac/*.*", "*/*/Mac/*.*",  "*/*/*/Mac/*.*"
+  s.resources     = "*/*/*.xib", "*/*/*/*.xib" 
   s.requires_arc  = false
 end
