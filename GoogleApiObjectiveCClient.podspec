@@ -17,9 +17,9 @@ Pod::Spec.new do |s|
 					"*/Mac/*.*",
 					"*/*/Mac/*.*",
 					"*/*/*/Mac/*.*",
-					*_Sources.m,
+					"*_Sources.m",
 					"Services/*/*/*_Sources.m",
-					Tools/ServiceGenerator/*.*
+					"Tools/ServiceGenerator/*.*"
 					 
   s.resources     = "*/*/*.xib",
   					"*/*/*/*.xib" 
