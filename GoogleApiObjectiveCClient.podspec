@@ -1,6 +1,6 @@
 Pod::Spec.new do |s|
   s.name         = "GoogleApiObjectiveCClient"
-  s.version      = "0.0.4"
+  s.version      = "0.0.5"
   s.summary      = "Git version of the original Google API Client for ObjectiveC, which uses SVN"
   s.homepage     = "https://github.com/LuizSSB/GoogleApiObjectiveCClient"
   s.license      = { :type => "MIT", :file => "license.txt" }
@@ -17,7 +17,9 @@ Pod::Spec.new do |s|
 					"*/Mac/*.*",
 					"*/*/Mac/*.*",
 					"*/*/*/Mac/*.*",
-					"Services/*/*/*_Sources.m"
+					*_Sources.m,
+					"Services/*/*/*_Sources.m",
+					Tools/ServiceGenerator/*.*
 					 
   s.resources     = "*/*/*.xib",
   					"*/*/*/*.xib" 
@@ -27,8 +29,8 @@ Pod::Spec.new do |s|
 						  "*/*/*/*.h",
 						  "*.h"
 						  
-  s.source_files  = "*/*.{h,m}",
+  s.source_files  = "*.{h,m}",
+  					"*/*.{h,m}",
   					"*/*/*.{h,m}",
-					"*/*/*/*.{h,m}",
-					"*.{h,m}"
+					"*/*/*/*.{h,m}"
 end
